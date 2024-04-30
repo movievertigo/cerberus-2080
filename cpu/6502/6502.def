@@ -136,7 +136,7 @@
 "asl a"		2 	0A																
 		a = aslCode(a)
 
-"dec @O"	6 	(Z:C6,ZX:D6,A:CE,ZX:DE)											
+"dec @O"	6 	(Z:C6,ZX:D6,A:CE,AX:DE)											
 		@EAC;sValue = zValue = (READ8(eac)-1) & 0xFF; WRITE8(eac,sValue)
 
 "dec"		2 	3A 																
